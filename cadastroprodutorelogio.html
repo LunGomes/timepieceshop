@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Piece Shop</title>
+
+    <!-- Inclua o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Logotipo -->
+<div class="navbar justify-content-center mt-3 bg-danger">
+    <img src="logo.png" width="150px" height="150px" />
+  </div>
+
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Time Piece Shop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cadastrousuario.html">Entrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cadastroProduto.html">Cadastro Produto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--id_produtorelogio : id_produtorelogio,
+        descricao : descricao,
+        marca : marca,
+        data_fabricacao : data_fabricacao,
+        anos_garantia : anos_garantia -->
+
+<!-- Formulário de Cadastro de Pessoa com Bootstrap -->
+<div class="container mt-5">
+    <h1>Cadastrar Produto Relógio</h1>
+    <form action = "/cadastroprodutorelogio" method="post"> <!--rota para inserir os dados pelo site-->
+        <div class="form-group">
+            <label for="id_produtorelogio">Id do produto:</label>
+            <input type="text" class="form-control" id="id_produtorelogio" name="id_produtorelogio" placeholder="Id">
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição:</label>
+            <input type="text" class="form-control" id="descrição" name="descricao" placeholder="Descrição">
+        </div>
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca">
+        </div>
+        <div class="form-group">
+            <label for="data_fabricacao">Data de fabricação:</label>
+            <input type="text" class="form-control" id="data_fabricacao" name="data_fabricacao" placeholder="Data fabricação">
+        </div>
+        <div class="form-group">
+            <label for="anos_garantia">Anos de garantia:</label>
+            <input type="text" class="form-control" id="anos_garantia" name="anos_garantia" placeholder="Anos de garantia">
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <br>
+        <br>
+    </form>
+</div>
+
+    <!-- Rodapé -->
+  <footer class="text-white text-center py-3 bg-danger">
+    <p>&copy; 2023 Time Piece Shop.</p>
+  </footer>
+
+<!-- Inclua o JavaScript do Bootstrap e jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
