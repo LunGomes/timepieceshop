@@ -26,7 +26,7 @@ const UsuarioSchema = new mongoose.Schema({
 });
  
  
-const Usuario = mongoose.model("Usuário", UsuarioSchema);
+const Usuario = mongoose.model("usuario", UsuarioSchema);
  
  
 //configurando os roteamentos da model usuario
@@ -74,7 +74,7 @@ const produtorelogioSchema = new mongoose.Schema({
 });
  
  
-const Produtorelogio = mongoose.model("Relogios_produtos", produtorelogioSchema);
+const Produtorelogio = mongoose.model("produtorelogio", produtorelogioSchema);
  
  
 //configurando os roteamentos da model usuario
@@ -138,11 +138,7 @@ app.get("/", async(req, res)=>{
     res.sendFile(__dirname +"/index.html");
 });
 
-app.get("/", async(req, res)=>{
-    res.sendFile(__dirname +"/cadastrousuario.html");
-});
- 
- 
+
 //configurando a porta - pra ler que vc ta usando a porta 3000 no mongo e no postman
 app.listen(port, ()=>{
     console.log(`Servidor rodando na porta ${port}`);
